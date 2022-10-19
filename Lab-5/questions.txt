@@ -1,0 +1,15 @@
+Q1. WAP to sort a list of n elements using the merge sort algorithm and compare with different
+states of data sets :-
+random data , sorted data, reversely sorted data
+
+Q2. In a gathering there are b boy and g girl (b>g) of different ages you have 2 unsorted arrays 
+giving there ages one is for boys and one for girls. WAP with complexity of {O (b log g)} to find the 
+ages that are common between both boys and girls.
+
+Q3. A and B are playing a guessing game, where B first thinks up an integer X, which can be positive 
+negative or zero and could be of arbitrarily large magnitude, and A tries to guess it. In response to 
+A's guess B fives any one of the following 3 replies:
+ a.) Try a bigger number
+ b.) Try a smaller number
+ c.) You got it
+WAP to design an efficient alogrithm to minimise the number of guesses A has to make.

@@ -1,0 +1,3 @@
+Q1. WAP using array to find an element's index position
+Q2. WAP to find out maximum sum of 2 numbers of an array.
+Q3. WAP to print acronym of a word

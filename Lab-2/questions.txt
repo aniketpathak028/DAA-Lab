@@ -1,0 +1,9 @@
+Q1. Write a program using array to arrange in such a way that the final array element should be even 
+numbers followed by odd numbers
+
+Q2. Write a program to find out occurences of each digits and print the maximum occurence of digit.
+
+Q3. WAP for euclids algorithm for finding the gcd of any 2 numbers using gcd(m,n)= gcd(n,m mod n) where 
+m mod n is the remainder of the ______________________ of m by n ______________ be continued until m mod n
+is equal to ____________
+

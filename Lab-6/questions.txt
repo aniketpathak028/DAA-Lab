@@ -1,0 +1,3 @@
+Q1. Use min heap algorithm to sort an array in ascending order
+
+Q2. Use max heap algorithm to sort an array in descending order

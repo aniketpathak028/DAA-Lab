@@ -1,0 +1,4 @@
+Q1. WAP a program for insertion sort (compare best case, worst case and average case for different 
+values of n)
+
+Q2. WAP for binary search and compare the best/average/worst case for different values of n

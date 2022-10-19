@@ -1,0 +1,8 @@
+Q1. WAP to display an array of n integer (n>1) where at every index array, there should be the product
+of all the elements in the array, except the element at the given index
+
+Q2. WAP for a n*n square matrix:-
+- find the number of non zero elements in A.
+- find the sum of element above the leading diagonal
+- product of the diagonal element
+
