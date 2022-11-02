@@ -1,1 +1,1 @@
-# All DAA-Lab codes at a single place for CSE-7
+# CSE-7 DAA-Lab
