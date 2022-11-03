@@ -11,11 +11,6 @@ int MatrixChainOrder(int p[], int i, int j)
     int k;
     int min = INT_MAX;
     int count;
-
-    // place parenthesis at different places between first
-    // and last matrix, recursively calculate count of
-    // multiplications for each parenthesis placement and
-    // return the minimum count
     for (k = i; k < j; k++)
     {
         count = MatrixChainOrder(p, i, k) +
