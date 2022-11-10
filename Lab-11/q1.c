@@ -1,15 +1,11 @@
-// Floyd-Warshall Algorithm in C
-
 #include <stdio.h>
 
-// defining the number of vertices
 #define nV 4
 
 #define INF 999
 
 void printMatrix(int matrix[][nV]);
 
-// Implementing floyd warshall algorithm
 void floydWarshall(int graph[][nV])
 {
     int matrix[nV][nV], i, j, k;
@@ -18,7 +14,6 @@ void floydWarshall(int graph[][nV])
         for (j = 0; j < nV; j++)
             matrix[i][j] = graph[i][j];
 
-    // Adding vertices individually
     for (k = 0; k < nV; k++)
     {
         for (i = 0; i < nV; i++)

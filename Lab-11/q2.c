@@ -1,5 +1,3 @@
-// Kruskal's algorithm in C
-
 #include <stdio.h>
 
 #define MAX 30
@@ -26,7 +24,6 @@ void applyUnion(int belongs[], int c1, int c2);
 void sort();
 void print();
 
-// Applying Krushkal Algo
 void kruskalAlgo()
 {
     int belongs[MAX], i, j, cno1, cno2;
@@ -79,7 +76,6 @@ void applyUnion(int belongs[], int c1, int c2)
             belongs[i] = c1;
 }
 
-// Sorting algo
 void sort()
 {
     int i, j;
@@ -95,7 +91,6 @@ void sort()
             }
 }
 
-// Printing the result
 void print()
 {
     int i, cost = 0;
