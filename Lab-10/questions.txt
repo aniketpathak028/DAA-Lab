@@ -1,2 +1,2 @@
-Q1. Longest common subsequence
-Q2. MCM
+Q1. Implement Longest common subsequence
+Q2. Implement Matrix Chain Multiplication

@@ -1,0 +1,3 @@
+q1. floyd warshal algorithm
+q2. krushkal algorithm
+q3. belman-ford algorithm
