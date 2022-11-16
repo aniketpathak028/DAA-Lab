@@ -26,9 +26,9 @@ void printArray(int arr[], int n)
     printf("\n");
 }
 
-// Worst complexity: n^2
+// Worst complexity: n^2 (when the array is reversely sorted)
 // Average complexity: n^2
-// Best complexity: n
+// Best complexity: n (when the array is already sorted)
 
 int main()
 {

@@ -1,1 +1,1 @@
-WAP for the fractional knapsack problem using the greedy approach
+Q. WAP for the fractional knapsack problem using the greedy approach

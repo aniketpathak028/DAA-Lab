@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 void acronym(char str[], int l)
 {
     char *a;
     a = str;
     printf("The acronym= %c", *a);
-    for (int i = 0; i < 20; i++)
+    for (int i = 0; i < l; i++)
     {
         if (*(a + i - 1) == ' ')
         {
@@ -14,6 +15,7 @@ void acronym(char str[], int l)
         }
     }
 }
+
 void main()
 {
     char str[100];
