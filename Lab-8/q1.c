@@ -2,6 +2,7 @@
 
 void main()
 {
+    
     int capacity, no_items, cur_weight, item;
     int used[10];
     float total_profit;

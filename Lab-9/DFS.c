@@ -15,7 +15,7 @@ struct Graph
     int *visited;
     struct node **adjLists;
 };
-
+ 
 void DFS(struct Graph *graph, int vertex)
 {
     struct node *adjList = graph->adjLists[vertex];

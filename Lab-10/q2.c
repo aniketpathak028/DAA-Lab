@@ -1,33 +1,37 @@
-#include <limits.h>
 #include <stdio.h>
 
-int MatrixChainOrder(int p[], int i, int j)
+int MCM(int arr[], int n)
 {
-    if (i == j)
-        return 0;
-    int k;
-    int min = INT_MAX;
-    int count;
-    for (k = i; k < j; k++)
-    {
-        count = MatrixChainOrder(p, i, k) +
-                MatrixChainOrder(p, k + 1, j) +
-                p[i - 1] * p[k] * p[j];
+    int dp[n][n];
+    for (int i = 1; i < n; i++)
+        dp[i][i] = 0;
 
-        if (count < min)
-            min = count;
+    for (int i = n - 1; i >= 1; i--)
+    {
+        for (int j = i + 1; j < n; ++j) // j must be ahead of i
+        {
+            int mini = 999999;
+
+            // iterate for all partitions
+            for (int k = i; k < j; ++k)
+            {
+                // total_cost= cost(multiplying the two partitions) + cost(each partition separately)
+                int step_count = arr[i - 1] * arr[k] * arr[j] + dp[i][k] + dp[k + 1][j];
+                if(step_count<mini)
+                    mini = step_count;
+            }
+
+            dp[i][j] = mini;
+        }
     }
-    return min;
+
+    return dp[1][n - 1];
 }
 
 int main()
 {
-    int arr[] = {1, 2, 3, 4, 3};
-    int n = sizeof(arr) / sizeof(arr[0]);
-
-    printf("Minimum number of multiplications is %d ",
-           MatrixChainOrder(arr, 1, n - 1));
-
-    getchar();
+    int arr[] = {10, 20, 30, 40 ,50};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    printf("MCM is %d ", MCM(arr, size));
     return 0;
 }

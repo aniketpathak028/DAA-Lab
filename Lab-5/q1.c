@@ -1,10 +1,11 @@
 #include <stdio.h>
 
+// O(n^2) doesn't depend on the input
+
 void merge(int arr[], int p, int q, int r)
 {
     int n1 = q - p + 1;
     int n2 = r - q;
-
     int L[n1], M[n2];
 
     for (int i = 0; i < n1; i++)
@@ -71,9 +72,7 @@ int main()
 {
     int arr[] = {6, 5, 12, 10, 9, 1};
     int size = sizeof(arr) / sizeof(arr[0]);
-
     mergeSort(arr, 0, size - 1);
-
     printf("Sorted array: \n");
     printArray(arr, size);
 }
